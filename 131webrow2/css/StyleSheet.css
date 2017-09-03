@@ -1,0 +1,55 @@
+body {
+    position: relative;
+    background-color: #2E0000;
+}
+header{
+  padding-top: 50px;
+  background-color: #000000;
+  color:#fff;
+}
+h1{
+  padding-top: 50px;
+}
+.affix {
+    height: 300px;
+}
+div.col-sm-11 div {
+    font-size: 28px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+    background-color: #EB0000;
+}
+a{
+    color: #fff;
+}
+.roundedframe{
+  height: 400px;
+  width: 400px;
+}
+
+
+.font-creepster{
+    font-family: 'Creepster', cursive;
+}
+.font-eater{
+    font-family: 'Eater', cursive;
+}
+.font-typomondo{
+   font-family: 'Nosifer', cursive;
+}
+.font-butcherman{
+  font-size: 62px;
+  font-family: 'Nosifer', cursive;
+  font-family: 'Butcherman', cursive;
+}
+
+#section1, #section2, #section3, #section4, #section5{
+  color: #fff;
+    background-color: #594E52;
+}
+
+@media screen and (max-width: 810px) {
+  #section1, #section2, #section3, #section4, #section5  {
+      margin-left: 150px;
+  }
+}
