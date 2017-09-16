@@ -1,32 +1,49 @@
 body {
   position: relative;
-    color: #0077b5;
-    color: #dde6ea;
-    color: #283e4a;
-    color: #434649;
+}
+h1{
+  color: #0077b5;
+}
+h1:hover{
+  color: #283e4a;
+  text-decoration: none;
+}
+footer{
+  line-height: 3.0em;
+  font-size: 1.2em;
+  height: 12%;
+  color: #dde6ea;
+  background-color: #434649;
+}
+.rightpadding{
+  padding-right: 50px;
+}
+.nav>li>a:hover{
+  background-color: #434649;
+  color: #dde6ea;
+  padding: 15px;
+}
+.spypadding {
+  margin-top: 130px;
+  width: 12%;
 }
 .affix {
     height: 300px;
 }
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
-    background-color: #5555;
+    background-color: #283e4a;
+}
+.secspacing{
+  padding-top: 250px;
+  padding-bottom: 500px;
+  margin-top: 200px;
 }
 .roundedframe{
-  height: 300px;
-  width: 300px;
+  height: 100%;
+  width: 100%;
 }
-
 #section1, #section2, #section3, #section4, #section5{
-    background-color: #6666;
-}
-
-@media screen and (min-width: 810px) {
-  #section1, #section2, #section3, #section4, #section5  {
-      margin-left: 150px;
-  }
-  .secspacing{
-    padding-top: 50px;
-    padding-bottom: 400px;
+    background-color: #dde6ea;
+    margin-left: 100px;
     margin-bottom: 200px;
-  }
 }
