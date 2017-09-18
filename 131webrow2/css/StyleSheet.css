@@ -48,6 +48,132 @@ footer{
     margin-left: 125px;
     margin-bottom: 200px;
 }
+
+/* Specific stuff for Sam --- */
+
+/* Utility */
+.home-border {
+    border: 2px solid black;
+    background-color: white;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-center {
+    text-align: center;
+}
+
+/* Homepage header and landing */
+#home-header-img {
+    width:100%;
+    padding: 6em 0em;
+    background-image: url("../images/HomeBanner.png");
+    background-size: cover;
+
+    /* so it plays nice with the header */
+    margin-top: 50px;
+}
+
+#home-header {
+    width: 30em;
+}
+
+#home-header-tagline {
+    font-size: 2em;
+}
+
+.home-header-action {
+    width: 49%;
+    margin: .5em 0em;
+    padding: .25em 0em;
+    font-size: 1.4em;
+    /*border-radius: 7px;*/
+}
+
+/* Home articles */
+#index article {
+    padding: 0em 1em;
+}
+#index article h2 {
+    margin-bottom: 1em;
+}
+.home-col {
+    margin-top: 3em;
+}
+
+/* Home images */
+.home-img {
+    width: 250px;
+    height: auto;
+}
+
+/* Spacers */
+.intro-spacer {
+    border-width: 2px 0px;
+    border-style: solid;
+    border-color: black;
+
+    margin: 4em 0em 1em 0em;
+    padding: 0.4em 0em;
+}
+.spacer {
+    margin: 4em 0em;
+    width: 100%;
+    border-top: 2px solid black;
+}
+
+/* Overide general style for h1 above. */
+.intro-spacer h1 {
+    color: black;
+}
+.intro-spacer:hover {
+    color: black;
+}
+
+/* Bottom button */
+.bottom-action {
+    margin: 1em auto 4em auto;
+    font-size: 1.4em;
+    width: 170px;
+}
+
+/* Footer */
+#footer {
+    background-color: black;
+}
+
+/* Fonts */
+#index h1 {
+    font-size: 1.7em;
+}
+#index h2 {
+    font-size: 1.4em;
+}
+article p {
+    font-size: 1.2em;
+}
+
+/* Colors */
+#index .text-primary{
+    color: #0077b5;
+}
+#index .text-secondary {
+    color: #283e4a;
+}
+#index strong {
+    color: #0077b5;
+}
+
+/* End specific stuff for Sam --- */
+
 @media screen and (max-width: 992px) {
   #section1, #section2, #section3, #section4, #section5{
       margin-left: 0px;

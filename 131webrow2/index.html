@@ -7,10 +7,11 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/samstyles.css">
+    <link rel="stylesheet" href="css/StyleSheet.css">
+    <link rel="stylesheet" href="css/reset.css">
 </head>
 
-<body>
+<body id="index">
     <!-- Ashley's header -->
     <header>
         <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -25,7 +26,7 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="#">Job Seeking</a></li>
+                    <li><a href="profiles.html">Job Seeking</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="rightpadding"><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -57,57 +58,70 @@
 
     <div class="container">
         <div id="learn-more" class="intro-spacer"> <!--mt-5 mb-4 pt-2 pb-3-->
-            <h1 class="text-center"><span class="text-primary">[placeholder]</span> empowers you to...</h1>
+            <h1 class="text-center"><strong>[placeholder]</strong> empowers you to...</h1>
         </div>
 
         <div class="row">
-            <div class="col-sm-12 col-md-6"> <!--    mt-sm-0 mt-md-3 mt-lg-5    py-4-->
+            <div class="col-sm-12 col-md-6 home-col"> <!--    mt-sm-0 mt-md-3 mt-lg-5    py-4-->
                 <article>
                     <h2><strong>Build your web.</strong></h2> <!--mb-4-->
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices gravida dictum fusce ut. Et netus et malesuada fames ac turpis egestas. Eget nunc scelerisque viverra
-                        mauris.</p>
-                    <article>
+                    <p>Growing your professional network has never been easier. Find new connections through friends, our powerfull search algorithm, and even automatic sugestions from our system. Once connected, users can recomend connections, post activity, conatct eachother through multiple mediums, and more.</p>
+                </article>
             </div>
-            <div> <!--col-sm-12 col-md-6    py-4-->
-                <img class="home-img mx-auto d-block" src="https://via.placeholder.com/500x500" alt="">
+            <div class="col-sm-12 col-md-6 home-col">
+                <img class="home-img center" src="./images/build.png" alt="">
             </div>
         </div>
 
         <div class="row">
-            <div class="col-sm-12 col-md-6"> <!--order-md-2    mt-sm-0 mt-md-3 mt-lg-5    py-4-->
+            <div class="col-sm-12 col-md-6 home-col"> <!--order-md-2    mt-sm-0 mt-md-3 mt-lg-5    py-4-->
                 <article>
                     <h2><strong>Leverage our network.</strong></h2> <!--mb-4-->
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <span id="home-user-count" class="text-primary"></span> magna aliqua. Ultrices gravida dictum fusce ut. Et netus et malesuada fames ac turpis egestas. Eget nunc scelerisque viverra
-                        mauris.</p>
-                    <article>
+                    <p>[placeholder] is employed by <strong><span id="home-user-count">1,761,836</span> users</strong> and we're growing fast. Sign up today to gain access to the largest network of professional monsters, spooks, and crooks in the nation. It's time for you to connect with former co-workers, prospective employers, and future partners.</p>
+                </article>
             </div>
-            <div class="col-sm-12 col-md-6"> <!-- order-md-1    py-4-->
-                <img class="home-img mx-auto d-block" src="https://via.placeholder.com/500x500" alt="">
+            <div class="col-sm-12 col-md-6 home-col"> <!-- order-md-1    py-4-->
+                <img class="home-img center" src="./images/leverage.png" alt="">
             </div>
         </div>
 
         <div class="row">
-            <div class="col-sm-12 col-md-6"> <!--    mt-sm-0 mt-md-3 mt-lg-5    py-4-->
+            <div class="col-sm-12 col-md-6 home-col"> <!--    mt-sm-0 mt-md-3 mt-lg-5    py-4-->
                 <article>
                     <h2><strong>Find your edge.</strong></h2> <!--mb-4-->
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices gravida dictum ut. Et netus et malesuada fames ac turpis egestas. Eget nunc scelerisque viverra
-                        mauris.</p>
-                    <article>
+                    <p>In this world, it's what what you know, but who you know. Find your competitive edge by connecting with employers, distributers, suppliers, and more. Land that next order with [placeholder].</p>
+                </article>
             </div>
-            <div class="col-sm-12 col-md-6"> <!--    py-4-->
-                <img class="home-img mx-auto d-block" src="https://via.placeholder.com/500x500" alt="">
+            <div class="col-sm-12 col-md-6 home-col"> <!--    py-4-->
+                <img class="home-img center" src="./images/find.png" alt="">
             </div>
         </div>
 
         <div class="spacer"></div> <!-- mt-4 mb-5-->
     </div>
 
-    <h2 class="text-center">Stop lurking. <span class="text-primary">Join the mob.</span></h2>
-    <div class="home-border bottom-action"> <!-- mx-auto mt-3 mb-5-->
-        <a href="#">
-            <p class="text-center text-link">Get Started</p> <!--py-1-->
+    <h2 class="text-center">Stop lurking. <strong>Join the mob.</strong></h2>
+    <div class="home-border bottom-action center"> <!-- mx-auto mt-3 mb-5-->
+        <a href="signup.html">
+            <p class="text-center">Get Started</p> <!--py-1-->
         </a>
     </div>
+
+    <footer>
+        <div class="container">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-lg-offset-2">
+            <ul class="list-inline">
+              <li><a href="#">User Agreement</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Community Guidelines</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">Copyright Policy</a></li>
+              <li><a href="#">Guest Controls</a></li>
+              <li><a href="#">Languages</a></li>
+            </ul>
+          </div>
+        </div>
+    </footer>
 
     <script src="js/home.js"></script>
 </body>
