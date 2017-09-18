@@ -42,8 +42,25 @@ footer{
   height: 100%;
   width: 100%;
 }
+
 #section1, #section2, #section3, #section4, #section5{
     background-color: #dde6ea;
-    margin-left: 100px;
+    margin-left: 125px;
     margin-bottom: 200px;
 }
+@media screen and (max-width: 992px) {
+  #section1, #section2, #section3, #section4, #section5{
+      margin-left: 0px;
+  }
+}
+
+/*
+Extra small devices Phones (<768px)
+Small devices Tablets (≥768px)
+Medium devices Desktops (≥992px)
+Large devices Desktops (≥1200px)
+
+@media screen and (min-width: px) {
+
+}
+*/

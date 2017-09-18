@@ -10,10 +10,19 @@
 
   <!-- Bootstrap -->
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/ImageModalStyleSheet.css">
   <link rel="stylesheet" href="css/StyleSheet.css">
+  <link rel="stylesheet" href="stylesheet.css" media="screen" title="no title">
 </head>
 
 <body>
+  <!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
   <div class="container-fluid jumbotron">
     <header>
       <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -29,7 +38,7 @@
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Job Seeking</a></li>
+            <li><a href="profiles.html">Job Seeking</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -41,7 +50,7 @@
 
   </div>
   <div class="container">
-    <img src="images/mummy.jpg" alt="" class="img-circle mummy" width="200" height="200" />
+    <img id="myImg" src="images/mummy.jpg" alt="Im-Ho-Tep" class="img-circle mummy" width="200" height="200">
     <div class="row content">
       <div class="col-md-6 contact_info">
         <h1 class="page-header"><span> Contact Info <button type="button" class="btn btn-info btn-xs" id="myBtn">Update</button></span>   </h1>
@@ -152,12 +161,10 @@
       </div>
     </div>
   </footer>
-  
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="bootstrap/js/bootstrap.min.js"></script>
-  
   <script type="text/javascript">
     function upDate() {
       document.getElementById("name").innerHTML =
@@ -168,7 +175,7 @@
         document.getElementById("formPhone").value;
         document.getElementById("birthday").innerHTML =
           document.getElementById("month").value + " / " +
-          document.getElementById("day").value  + " / " + 
+          document.getElementById("day").value  + " / " +
           document.getElementById("year").value;
     }
   </script>
@@ -179,7 +186,7 @@
       });
     });
   </script>
-
+<script src="js/ImageModal.js"></script>
 </body>
 
 </html>
