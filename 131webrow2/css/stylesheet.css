@@ -4,185 +4,117 @@ body {
 
 
 h1{
-
   color: #0077b5;
-
 }
 
 h1:hover{
-
   color: #283e4a;
-
   text-decoration: none;
-
-}
-
-footer{
-
-  line-height: 3.0em;
-
-  font-size: 1.2em;
-
-  height: 12%;
-
-  color: #dde6ea;
-
-  background-color: #434649;
-
 }
 
 .rightpadding{
-
   padding-right: 50px;
-
 }
 
 .nav>li>a:hover{
-
   background-color: #434649;
-
  }
 
 .contact_info{
-
   float: right;
-
   font-size: 100%;
-
 }
 
 .mummy{
-
   display: block;
-
   margin: 0 auto;
-
   border: 2px solid black;
-
   box-shadow: 5px 2px #434649;
-
 }
 
 .jumbotron{
-
   background-image: url("../images/header.jpg");
-
   padding: 5%;
-
   background-position: right top;
-
   background-attachment: fixed;
-
   background-repeat: no-repeat;
-
   margin: 0;
-
   margin-bottom: 2%;
-
 }
 
 .jumbotron h1{
-
   text-align: center;
-
   color: #dde6ea;
-
   padding: 15px;
+}
 
+footer{
+  color: #dde6ea;
+  background-color: #434649;
+  padding: .5%;
+  text-align: center;
+  font-size: .7em;
 }
 
 .spypadding {
-
   margin-top: 130px;
-
   width: 12%;
-
 }
 
 .affix {
-
     height: 300px;
-
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
-
     background-color: #283e4a;
-
 }
 
 .secspacing{
-
   padding-top: 250px;
-
   padding-bottom: 500px;
-
   margin-top: 200px;
-
 }
 
 .roundedframe{
-
   height: 100%;
-
   width: 100%;
-
 }
 
 
 
 #section1, #section2, #section3, #section4, #section5{
-
     background-color: #dde6ea;
-
     margin-left: 125px;
-
     margin-bottom: 200px;
-
 }
 
 
 
 /* Specific stuff for Sam --- */
 
-
-
 /* Utility */
 
 .home-border {
-
     border: 2px solid black;
-
     background-color: white;
-
 }
 
 .float-left {
-
     float: left;
-
 }
 
 .float-right {
-
     float: right;
-
 }
 
 .center {
-
     display: block;
-
     margin-left: auto;
-
     margin-right: auto;
-
 }
 
 .text-center {
-
     text-align: center;
-
 }
 
 
@@ -190,67 +122,43 @@ footer{
 /* Homepage header and landing */
 
 #home-header-img {
-
     width:100%;
-
     padding: 6em 0em;
-
     background-image: url("../images/HomeBanner.png");
-
     background-size: cover;
 
-
-
     /* so it plays nice with the header */
-
     margin-top: 50px;
-
-  padding-top: 7%;
-
+	padding-top: 7%;
 }
 
 
 
 #home-header {
-
     width: 30em;
-
 }
 
 .p {
-
   font-size: 200%;
-
 }
 
 
 
 #home-header-tagline {
-
     font-size: 2em;
-
 }
 
 .container li{
-
   font-size: 200%;
-
 }
 
 
 
 .home-header-action {
-
     width: 49%;
-
     margin: .5em 0em;
-
     padding: .25em 0em;
-
     font-size: 1.4em;
-
-    /*border-radius: 7px;*/
-
 }
 
 
@@ -258,21 +166,15 @@ footer{
 /* Home articles */
 
 #index article {
-
     padding: 0em 1em;
-
 }
 
 #index article h2 {
-
     margin-bottom: 1em;
-
 }
 
 .home-col {
-
     margin-top: 3em;
-
 }
 
 
@@ -280,11 +182,8 @@ footer{
 /* Home images */
 
 .home-img {
-
     width: 250px;
-
     height: auto;
-
 }
 
 
@@ -292,29 +191,17 @@ footer{
 /* Spacers */
 
 .intro-spacer {
-
     border-width: 2px 0px;
-
     border-style: solid;
-
     border-color: black;
-
-
-
     margin: 4em 0em 1em 0em;
-
     padding: 0.4em 0em;
-
 }
 
 .spacer {
-
     margin: 4em 0em;
-
     width: 100%;
-
     border-top: 2px solid black;
-
 }
 
 
@@ -322,15 +209,11 @@ footer{
 /* Overide general style for h1 above. */
 
 .intro-spacer h1 {
-
     color: black;
-
 }
 
 .intro-spacer:hover {
-
     color: black;
-
 }
 
 
@@ -338,13 +221,9 @@ footer{
 /* Bottom button */
 
 .bottom-action {
-
     margin: 1em auto 4em auto;
-
     font-size: 1.4em;
-
     width: 170px;
-
 }
 
 
@@ -352,31 +231,21 @@ footer{
 /* Footer */
 
 #footer {
-
     background-color: black;
-
 }
-
-
 
 /* Fonts */
 
 #index h1 {
-
     font-size: 1.7em;
-
 }
 
 #index h2 {
-
     font-size: 1.4em;
-
 }
 
 article p {
-
     font-size: 1.2em;
-
 }
 
 
@@ -384,45 +253,22 @@ article p {
 /* Colors */
 
 #index .text-primary{
-
     color: #0077b5;
-
 }
 
 #index .text-secondary {
-
     color: #283e4a;
-
 }
 
 #index strong {
-
     color: #0077b5;
-
 }
 
-
-
 /* End specific stuff for Sam --- */
-
-
 
 @media screen and (max-width: 992px) {
 
   #section1, #section2, #section3, #section4, #section5{
-
-      margin-left: 0px;
-
+    margin-left: 0px;
   }
-
-footer{
-
-  background-color:  black;
-
-  color: white;
-
-  padding: .5%;
-
-  text-align: center;
-
 }
