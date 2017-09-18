@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Profile of The Mummy</title>
+
+    <!-- Bootstrap -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css" media="screen" title="no title">
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+          <script src="bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  <div class="container-fluid jumbotron">
+    <header>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">WebSiteName</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Job Seeking</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            </ul>
+          </div>
+      </nav>
+      <h1>Im-Ho-Tep (The Mummy)</h1>
+    </header>
+
+    </div>
+    <div class="container">
+      <img src="images/mummy.jpg" alt="" class="img-circle mummy" width="200" height="200"/>
+      <div class="row content">
+        <div class="col-md-6 contact_info">
+          <h1 class="page-header"><span> Contact Info <button type="button" class="btn btn-info btn-xs" id="myBtn">Update</button></span>   </h1>
+          <ul>
+            <li>Name:<p id="name">Im-Ho-Tep</p></li>
+            <li>Email: <p id="email">ankh-es-en-amonandim-ho-tep@tombs.com</p></li>
+            <li>Phone: <p id="phone">(586) 568-6985 </p></li>
+            <li>Birthday: <p id="birthday">October/25/1932</p></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h1 class="page-header">About Me</h1>
+          <p class="p">
+            After 4 thousand years I finally became rediscovered after being buried alive by the king who did not want
+            me to revive my love Princess Ankh-es-en-amon from death. For 37 centuries I have waited, immured in my tomb to be free to find my Princess.
+            But in the mean time I could really use a job. I have learned much since being released from my tomb.
+          </p>
+        </div>
+      </div>
+      <div class="row content">
+        <div class="col-md-6">
+          <h1 class="page-header" >Experience</h1>
+          <p class="p">
+            Before being buried alive I was a priest.
+          </p>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+      </div>
+
+    </div>
+    <!--MODAL-->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1>Edit Contact Info</h1>
+          </div>
+          <div class="modal-body">
+            <form id="updateInfo">
+              <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" id="formName" placeholder="First & Last Name">
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="text" class="form-control" id="formEmail" placeholder="Email Address">
+              </div>
+              <div class="form-group">
+                <label>Phone</label>
+                <input type="text" class="form-control" id="formPhone" placeholder="Phone #">
+              </div>
+              <div class="form-group">
+                <label>Birthday</label>
+                <select class="form-group" name="birthday" id="month">
+                  <option value="Jan">Jan</option>
+                  <option value="Feb">Feb</option>
+                  <option value="Mar">Mar</option>
+                  <option value="April">April</option>
+                </select>
+                <select class="form-group" name="day" id="day">
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                </select>
+                <select class="form-group" name="year" id="year">
+                  <option value="1990">1990</option>
+                  <option value="1991">1991</option>
+                  <option value="1992">1992</option>
+                  <option value="1993">1993</option>
+                </select>
+            </div>
+            </form><!--END FORM-->
+          </div><!--END MODAL_BODY-->
+          <div class="modal-footer">
+            <input type="submit" onclick="upDate()" class="btn btn-info" value="Update" >
+            <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="glyphicon glyphicon-remove"></i> Close</button>
+          </div>
+        </div><!--END MODAL_CONTENT-->
+      </div>
+    </div><!--MODAL END-->
+  <footer>
+    <p>pageName&copy; </p>
+  </footer>
+<script type="text/javascript">
+function upDate() {
+  document.getElementById("name").innerHTML =
+          document.getElementById("formName").value;
+  document.getElementById("email").innerHTML =
+          document.getElementById("formEmail").value;
+  document.getElementById("phone").innerHTML =
+          document.getElementById("formPhone").value;
+  document.getElementById("birthday").innerHTML =
+          document.getElementById("month").value + " / " +
+          document.getElementById("day").value + " / " +
+          document.getElementById("year").value;
+}
+
+</script>
+   <script>
+   $(document).ready(function(){
+       $("#myBtn").click(function(){
+           $("#myModal").modal();
+       });
+   });
+   </script>
+
+  </body>
+</html>
