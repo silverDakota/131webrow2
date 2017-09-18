@@ -18,6 +18,20 @@ p {
     border: 2px solid black;
     background-color: white;
 }
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-center {
+    text-align: center;
+}
 
 /* --- Homepage --- */
 
@@ -38,7 +52,7 @@ p {
     font-size: 2em;
 }
 
-#home-header-action {
+.home-header-action {
     width: 40%;
     margin: 1em 5%;
     font-size: 1.4em;
