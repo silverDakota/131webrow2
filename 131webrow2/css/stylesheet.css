@@ -65,7 +65,7 @@ footer{
 
 .jumbotron{
 
-  background-image: url('images/header.jpg');
+  background-image: url("../images/header.jpg");
 
   padding: 5%;
 
