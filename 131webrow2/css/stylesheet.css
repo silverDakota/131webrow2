@@ -2,7 +2,6 @@ body {
   position: relative;
 }
 
-
 h1{
   color: #0077b5;
 }
@@ -262,6 +261,36 @@ article p {
 
 #index strong {
     color: #0077b5;
+}
+
+/* For social bar */
+#social-bar {
+	position: fixed;
+	top: 140px;
+	right: 0px;
+	width: 60px;
+	height: 200px;
+	color: rgba(0, 0, 0, 0);
+}
+#social-bar:hover {
+	color: rgba(0, 0, 0, 0.4);
+}
+
+.social-bar-icon {
+	width: 100%;
+	height: auto;
+	transition: 2s;
+}
+
+#social-bar-hide, #social-bar-show {
+	width: 100%;
+	color: inherit; /* Only shown when social bar is moused over. Handled in social-bar:hover */
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
+	text-align: left;
+}
+#social-bar-show {
+	display: none;
 }
 
 /* End specific stuff for Sam --- */
